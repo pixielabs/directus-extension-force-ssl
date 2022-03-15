@@ -1,3 +1,8 @@
+Uses the X-Forwarded-Proto header provided by reverse proxies like Heroku
+to decide whether to redirect the user's request to HTTPS. Only does something
+if the underlying Directus Express environment is set to production, which by
+default is set via a `NODE_ENV` environment variable.
+
 # Setup
 
 1. `npm i`
